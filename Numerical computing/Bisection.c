@@ -12,10 +12,7 @@ int a[50];
  int arr[100 ];
  printf("enter the initial guess of X0 and X1 from above tabulation and  e:-\n");
  scanf("%f%f%f",&x0,&x1,&e); 
- /*	for( i=0;i<=n;i++)
-	{ printf("enter the value of a[%d]:",i);
-		scanf("%d",&a[i]);
-		}*/
+ 
   y0=func(x0);
   y1=func(x1);
    i=0;
