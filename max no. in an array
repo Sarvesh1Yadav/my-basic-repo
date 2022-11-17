@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include<limits.h>
+int main() {
+    int max=INT_MIN,i;
+    int array[]={2,4,1,8,5,9,6};
+    for(i=0;i<7;i++)
+    { if(array[i]>max)
+    max=array[i];
+    }
+    printf("max no.of the array is= %d",max);
+}
