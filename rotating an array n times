@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<limits.h>
+int main() {
+    int array[]={1,2,3,4,5,6},n=6,k,j=0,i;
+    printf("enter the no. how many times u want to rotate:-\n ");
+    scanf("%d",&k);
+    k=k%n;
+    int ansarray[6];
+    for(i=n-k;i<n;i++)
+    { ansarray[j++]=array[i];
+    }
+    j=k;
+    for(i=0;i<n-k;i++)
+    { ansarray[j++]=array[i];
+    }
+    printf("array after rotating %d times=",k);
+      for(j=0;j<n;j++)
+      printf(" %d",ansarray[j]);
+    
+}
